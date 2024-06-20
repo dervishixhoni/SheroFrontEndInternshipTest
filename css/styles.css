@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-    width: 80vw;
     max-width: 80%;
     margin: 0 auto;
 }
@@ -24,6 +23,9 @@ body {
 
 .d-flex img{
     margin: 10px;
+    height: auto;
+    display: block;
+    width: 100%;
 }
 
 .justify-evenly {
@@ -32,10 +34,19 @@ body {
 
 .flex-column {
     flex-direction: column;
+    height: 100%;
 }
 
 .align-center {
     align-items: center;
+}
+
+.align-right {
+    align-items: flex-end;
+}
+
+.justify-end {
+    justify-content: flex-end;
 }
 
 .grid-container {
@@ -112,4 +123,71 @@ body {
 
 .small {
     font-size: 0.8rem;
+}
+
+.pad-2{
+    padding: 20px;
+}
+
+.white{
+    color: #fff;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.m-v-10{
+    margin: 5px auto;
+}
+
+.m-v-20{
+    margin: 10px auto;
+}
+
+.rounded{
+    border-radius: 50px;
+    border: 5px solid #007bff;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #236;
+    background: white;
+    max-width: 250px;
+}
+
+.text-wrap{
+    white-space: normal;
+    max-width: 130px;
+}
+
+.bg-gray{
+    background-color: #f2f2f2;
+    overflow: auto;
+}
+
+.bg-white{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.glide__arrow {
+    border: none;
+    border-radius: 48%;
+    background-color: #5f6368;
+}
+
+.width-80{
+    width: 80%;
+    margin: auto;
+}
+
+.prices{
+    font-weight: bold;
+    margin: 10px;
+    color: #007bff;
 }

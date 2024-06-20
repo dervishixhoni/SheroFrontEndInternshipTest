@@ -1,26 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="My Company Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <title>My Company Website</title>
 </head>
+
 <body>
-    <header class="container m-auto">
+    <header class=" container m-auto">
         <div class="grid-container m-auto m-vertical">
-            <div class="image-container d-flex flex-column align-left left-image" ><p>4TH OF JULY SAVINGS ARE HERE<span class="white">SAVE 15% SITE WIDE</span>FOR ORDERS OVER $200 <span class="bold">CODE: JULY4</span></p><button class="btn btn-white-blue">Shop Now</button><p class="small">Valid 7/3-7/6</p></div>
-            <div class="image-container d-flex flex-column align-mid top-right-image"><button class="btn btn-white-red">Shop Now</button></div>
-            <div class="image-container d-flex flex-column bottom-right-image"><button class="btn btn-blue" >Shop Now</button></div>
+            <div class="image-container d-flex flex-column justify-end align-right left-image pad-2">
+                <p class="m-v-10">4TH OF JULY SAVINGS ARE HERE</p>
+                <p class="white m-v-10">SAVE 15% SITE WIDE</p>
+                <p class="m-v-10">ORDERS OVER $200 </p>
+                <p class="bold m-v-10">CODE: JULY4</p>
+                <button class="btn btn-white-blue m-v-10">Shop Now</button>
+                <p class="small m-v-10">Valid 7/3-7/6</p>
+            </div>
+            <div class="image-container d-flex flex-column align-right top-right-image">
+                <div class="d-flex flex-column justify-evenly align-center">
+                    <p class="white text-wrap text-center">Wireless Efficency</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
+                        width="25" height="25   ">
+                        <polygon fill="#000000"
+                            points="80.562,41.754 52.861,41.754 67.299,0 19.437,58.247 47.14,58.247 32.702,100 " />
+                    </svg>
+                    <p class="white text-wrap text-center">Button-press voltage adjustment</p>
+                    <button class="btn btn-white-red">Shop Now</button>
+                </div>
+            </div>
+            <div class="image-container d-flex flex-column justify-evenly align-center bottom-right-image">
+                <p class="rounded text-center">Personal Protective Equipment (PPE)</p>
+                <button class="btn btn-blue">Shop Now</button>
+            </div>
         </div>
         <div class="d-flex justify-evenly m-vertical">
-            <div class="d-flex flex-column justify-evenly align-center"><p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button class="btn btn-blue">Shop Now</button></div>
-            <div class="d-flex flex-column justify-evenly align-center"><p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button class="btn btn-blue">Shop Now</button></div>
-            <div class="d-flex flex-column justify-evenly align-center"><p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button class="btn btn-blue">Shop Now</button></div>
-            <div class="d-flex flex-column justify-evenly align-center"><p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button class="btn btn-blue">Shop Now</button></div>
-            <div class="d-flex flex-column justify-evenly align-center"><p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button class="btn btn-blue">Shop Now</button></div>
+            <div class="d-flex flex-column justify-evenly align-center">
+                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
+                    class="btn btn-blue">Shop Now</button>
+            </div>
+            <div class="d-flex flex-column justify-evenly align-center">
+                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
+                    class="btn btn-blue">Shop Now</button>
+            </div>
+            <div class="d-flex flex-column justify-evenly align-center">
+                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
+                    class="btn btn-blue">Shop Now</button>
+            </div>
+            <div class="d-flex flex-column justify-evenly align-center">
+                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
+                    class="btn btn-blue">Shop Now</button>
+            </div>
+            <div class="d-flex flex-column justify-evenly align-center">
+                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
+                    class="btn btn-blue">Shop Now</button>
+            </div>
         </div>
     </header>
+    <main class="bg-gray">
+        <h2 class="text-center m-v-20">New Products</h2>
+        <div class="glide container m-v-20">
+            <div class="glide__track width-80" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 1</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 2</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 3</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 4</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 5</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="d-flex flex-column justify-evenly align-center bg-white">
+                            <img src="images/dummy_200x300_111111_ffffff.png" alt="Parts image">
+                            <p class="prices">$449.99</p>
+                            <p>Rook Quill Rotary Tattoo Machine -- Cooper 6</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left " data-glide-dir="<"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                    </svg></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg></button>
+            </div>
+        </div>
+    </main>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 5,
+            gap: 20
+        }).mount();
+    </script>
 </body>
+
 </html>
