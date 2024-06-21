@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header class=" container m-auto">
+    <header class="container m-auto">
         <div class="grid-container m-auto m-vertical">
-            <div class="image-container d-flex flex-column justify-end align-right left-image pad-2">
+            <div class="image-container d-flex flex-column justify-end align-right left-image">
                 <p class="m-v-10">4TH OF JULY SAVINGS ARE HERE</p>
                 <p class="white m-v-10">SAVE 15% SITE WIDE</p>
                 <p class="m-v-10">ORDERS OVER $200 </p>
@@ -43,26 +43,32 @@
         </div>
         <div class="d-flex justify-evenly m-vertical">
             <div class="d-flex flex-column justify-evenly align-center">
-                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
-                    class="btn btn-blue">Shop Now</button>
+                <p>TATTOO SUPPLIES</p>
+                <img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image">
+                <button class="btn btn-blue">Shop Now</button>
             </div>
             <div class="d-flex flex-column justify-evenly align-center">
-                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
-                    class="btn btn-blue">Shop Now</button>
+                <p>TATTOO SUPPLIES</p>
+                <img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image">
+                <button class="btn btn-blue">Shop Now</button>
             </div>
             <div class="d-flex flex-column justify-evenly align-center">
-                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
-                    class="btn btn-blue">Shop Now</button>
+                <p>TATTOO SUPPLIES</p>
+                <img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image">
+                <button class="btn btn-blue">Shop Now</button>
             </div>
             <div class="d-flex flex-column justify-evenly align-center">
-                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
-                    class="btn btn-blue">Shop Now</button>
+                <p>TATTOO SUPPLIES</p>
+                <img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image">
+                <button class="btn btn-blue">Shop Now</button>
             </div>
             <div class="d-flex flex-column justify-evenly align-center">
-                <p>TATTOO SUPPLIES</p><img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image"><button
-                    class="btn btn-blue">Shop Now</button>
+                <p>TATTOO SUPPLIES</p>
+                <img src="images/dummy_200x300_000000_15b9ef.png" alt="Flexbox Image">
+                <button class="btn btn-blue">Shop Now</button>
             </div>
         </div>
+        
     </header>
     <main class="bg-gray">
         <h2 class="text-center m-v-20">New Products</h2>
@@ -132,8 +138,20 @@
             type: 'carousel',
             startAt: 0,
             perView: 5,
-            gap: 20
+            gap: 20,
+            breakpoints: {
+                1024: {
+                    perView: 4
+                },
+                768: {
+                    perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
         }).mount();
+
     </script>
 </body>
 
